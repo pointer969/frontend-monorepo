@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://balancer.fi/sitemap.xml',
+    sitemap: 'https://cryzar.fi/sitemap.xml',
   }
 }

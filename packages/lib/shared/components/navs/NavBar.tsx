@@ -62,15 +62,15 @@ function NavLinks({ appLinks, ...props }: BoxProps & { appLinks: AppLink[] }) {
           </Link>
         </Box>
       ))}
-      <Box as={motion.div} variants={fadeIn}>
+      {/* <Box as={motion.div} variants={fadeIn}>
         <VeBalLink />
-      </Box>
+      </Box> */}
       {(isDev || isStaging) && (
         <Box as={motion.div} variants={fadeIn}>
           {/* <Link as={NextLink} color={linkColorFor('/debug')} href="/debug" prefetch variant="nav">
             Debug
           </Link> */}
-          <Link
+          {/* <Link
             as={NextLink}
             color={linkColorFor('/testooors')}
             href="/testooors"
@@ -78,7 +78,7 @@ function NavLinks({ appLinks, ...props }: BoxProps & { appLinks: AppLink[] }) {
             variant="nav"
           >
             Test
-          </Link>
+          </Link> */}
         </Box>
       )}
     </HStack>
@@ -96,14 +96,14 @@ function NavActions({ mobileNav }: { mobileNav: ReactNode }) {
           el: <DarkModeToggle />,
           display: { base: 'none', lg: 'block' },
         },
-        {
-          el: (
-            <Button as={NextLink} href="/pools" prefetch px={7} size="md" variant="primary">
-              Launch app
-            </Button>
-          ),
-          display: { base: 'block', lg: 'block' },
-        },
+        // {
+        //   el: (
+        //     <Button as={NextLink} href="/pools" prefetch px={7} size="md" variant="primary">
+        //       Launch app
+        //     </Button>
+        //   ),
+        //   display: { base: 'block', lg: 'block' },
+        // },
         {
           el: mobileNav,
           display: { base: 'block', lg: 'none' },

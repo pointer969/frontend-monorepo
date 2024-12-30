@@ -3,19 +3,11 @@ import { DiscordIcon } from '@repo/lib/shared/components/icons/social/DiscordIco
 import { MediumIcon } from '@repo/lib/shared/components/icons/social/MediumIcon'
 import { YoutubeIcon } from '@repo/lib/shared/components/icons/social/YoutubeIcon'
 import { GithubIcon } from '@repo/lib/shared/components/icons/social/GithubIcon'
-import { isDev, isStaging } from '@repo/lib/config/app.config'
+// import { isDev, isStaging } from '@repo/lib/config/app.config'
 import { getProjectConfig } from '@repo/lib/config/getProjectConfig'
 
 export function useNavData() {
-  const appLinks = []
-
-  // To-do: Remove this when veBAL is live
-  if (isDev || isStaging) {
-    appLinks.push({
-      label: 'veBAL (wip)',
-      href: '/vebal',
-    })
-  }
+  
 
   const ecosystemLinks = [
     { label: 'Build', href: 'https://balancer.fi/build' },
@@ -53,5 +45,5 @@ export function useNavData() {
     },
   ]
 
-  return { appLinks, ecosystemLinks, getSocialLinks }
+  return {  ecosystemLinks, getSocialLinks }
 }

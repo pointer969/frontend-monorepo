@@ -125,11 +125,11 @@ export function MobileNav({ appLinks, ecosystemLinks, socialLinks, LogoType }: M
           </DrawerHeader>
           <DrawerBody>
             <NavLinks appLinks={appLinks} onClick={onClose} />
-            <Divider my={4} />
-            <EcosystemLinks ecosystemLinks={ecosystemLinks} />
+            {/* <Divider my={4} />
+            <EcosystemLinks ecosystemLinks={ecosystemLinks} /> */}
           </DrawerBody>
           <DrawerFooter>
-            <SocialLinks socialLinks={socialLinks} />
+            {/* <SocialLinks socialLinks={socialLinks} /> */}
           </DrawerFooter>
         </DrawerContent>
       </Drawer>

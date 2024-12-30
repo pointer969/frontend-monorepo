@@ -9,9 +9,9 @@ import { useNav } from '@repo/lib/shared/components/navs/useNav'
 import { BalancerLogoType } from '../imgs/BalancerLogoType'
 
 export function NavBarContainer() {
-  const { appLinks, ecosystemLinks, getSocialLinks } = useNavData()
+  const { ecosystemLinks, getSocialLinks } = useNavData()
   const { defaultAppLinks } = useNav()
-  const allAppLinks = [...defaultAppLinks, ...appLinks]
+  const allAppLinks = [...defaultAppLinks]
 
   return (
     <AnimatePresence>

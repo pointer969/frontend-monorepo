@@ -21,17 +21,17 @@ export function useNav() {
 
   const defaultAppLinks: AppLink[] = [
     {
+      href: '/stake',
+      label: 'Stake',
+    },
+    {
       href: '/pools',
       label: 'Pools',
     },
     {
       href: swapHref,
       label: 'Swap',
-    },
-    {
-      href: '/portfolio',
-      label: 'Portfolio',
-    },
+    }
   ]
 
   const ecosystemLinks = [

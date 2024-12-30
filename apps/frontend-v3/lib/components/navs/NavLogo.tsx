@@ -1,8 +1,8 @@
 'use client'
 
 import { fadeIn } from '@repo/lib/shared/utils/animations'
-import { BalancerLogo } from '../imgs/BalancerLogo'
-import { BalancerLogoType } from '../imgs/BalancerLogoType'
+import CryzarLogo from '../imgs/CryzarLogo'
+import CryzarLogoType  from '../imgs/CryzarLogoType'
 import { Box, Link } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import NextLink from 'next/link'
@@ -13,10 +13,10 @@ export function NavLogo() {
       <Link as={NextLink} href="/" prefetch variant="nav">
         <Box>
           <Box display={{ base: 'block', md: 'none' }}>
-            <BalancerLogo width="26px" />
+            <CryzarLogo width="26px" />
           </Box>
           <Box display={{ base: 'none', md: 'block' }}>
-            <BalancerLogoType width="106px" />
+            <CryzarLogoType width="106px" />
           </Box>
         </Box>
       </Link>
