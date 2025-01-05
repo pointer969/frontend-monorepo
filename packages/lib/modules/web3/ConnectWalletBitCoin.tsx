@@ -3,7 +3,7 @@ import { Box, Button, ButtonProps, HStack, Img, Show } from '@chakra-ui/react'
 import { CustomAvatar } from './CustomAvatar'
 import { useUserAccount } from './UserAccountProvider'
 
-export function ConnectWallet({ ...rest }: ButtonProps) {
+export function ConnectWalletBitcoin({ ...rest }: ButtonProps) {
   const { isLoading: isLoadingAccount, isConnected: isConnectedAccount } = useUserAccount()
 
   return (
@@ -30,13 +30,13 @@ export function ConnectWallet({ ...rest }: ButtonProps) {
           return (
             <Button
               isDisabled={isLoading || !mounted}
-              loadingText="Connect EVM Wallet"
+              loadingText="Connect Bitcoin Wallet"
               onClick={openConnectModal}
               type="button"
               variant="tertiary"
               {...rest}
             >
-              Connect EVM Wallet
+              Connect Bitcoin Wallet
             </Button>
           )
         }

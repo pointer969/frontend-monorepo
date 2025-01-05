@@ -4,6 +4,7 @@ import NextLink from 'next/link'
 import DarkModeToggle from '../btns/DarkModeToggle'
 import { Box, HStack, BoxProps, Link, Button } from '@chakra-ui/react'
 import { ConnectWallet } from '@repo/lib/modules/web3/ConnectWallet'
+import { ConnectWalletBitcoin } from '@repo/lib/modules/web3/ConnectWalletBitCoin'
 import { UserSettings } from '@repo/lib/modules/user/settings/UserSettings'
 import RecentTransactions from '../other/RecentTransactions'
 import { isDev, isStaging } from '@repo/lib/config/app.config'
@@ -122,6 +123,10 @@ function NavActions({ mobileNav }: { mobileNav: ReactNode }) {
       },
       {
         el: <ConnectWallet />,
+        display: { base: 'block', lg: 'block' },
+      },
+      {
+        el: <ConnectWalletBitcoin />,
         display: { base: 'block', lg: 'block' },
       },
       {

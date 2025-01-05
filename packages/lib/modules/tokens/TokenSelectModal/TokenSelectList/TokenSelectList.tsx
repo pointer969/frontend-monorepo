@@ -73,7 +73,7 @@ function InYourWallet({ isConnected, openConnectModal, hasNoTokensInWallet }: In
               size="sm"
               variant="link"
             >
-              Connect wallet
+              Connect EVM Wallet
             </Button>
           )}
           {isConnected && hasNoTokensInWallet && (

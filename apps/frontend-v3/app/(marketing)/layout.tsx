@@ -5,7 +5,7 @@ import { PropsWithChildren } from 'react'
 
 export const metadata: Metadata = {
   title: 'Cryzar DeFi AMMs made easy',
-  description: `DeFi's most extensive AMM product suite—Balancer is a decentralized Automated Market Maker protocol built on Ethereum with a clear focus on fungible and yield-bearing liquidity.`,
+  description: `DeFi's most extensive AMM product suite—Balancer is a decentralized Automated Market Maker protocol built on Bitcoin with a clear focus on fungible and yield-bearing liquidity.`,
 }
 
 export default function MarketingLayout({ children }: PropsWithChildren) {
